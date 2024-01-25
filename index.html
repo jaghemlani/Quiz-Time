@@ -7,38 +7,38 @@
     <title>Code Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="start-screen">
+    <section class="container">
+        <nav id="start-screen">
             <h1>Code Quiz</h1>
-            <button id="start-btn">Start Quiz</button>
-        </div>
-        <div id="quiz-screen" class="hidden">
+            <button id="buttonstart">Start Quiz</button>
+        </nav>
+        <section id="qscreen" class="hidden">
             <h2>Question 1:</h2>
-            <p id="question-text">Sample Question?</p>
+            <p id="textquestion">Sample Question?</p>
             <button class="choice-btn">Option 1</button>
             <button class="choice-btn">Option 2</button>
             <button class="choice-btn">Option 3</button>
             <button class="choice-btn">Option 4</button>
-        </div>
-        <div id="game-over-screen" class="hidden">
+        </section>
+        <section id="goscreen" class="hidden">
             <h2>Game Over!</h2>
-            <p>Your score: <span id="final-score">0</span></p>
+            <p>Your score: <span id="finalscore">0</span></p>
             <label for="initials">Enter Initials:</label>
             <input type="text" id="initials" maxlength="3">
-            <button id="save-score-btn">Save Score</button>
-        </div>
-    </div>
+            <button id="savebutton">Save Score</button>
+        </section>
+    </section>
     <!-- Same as before -->
 
-<div id="quiz-screen" class="hidden">
+<section id="qscreen" class="hidden">
     <h2>Question <span id="question-number">1</span>:</h2>
-    <p id="question-text">Sample Question?</p>
+    <p id="textquestion">Sample Question?</p>
     <button class="choice-btn">Option 1</button>
     <button class="choice-btn">Option 2</button>
     <button class="choice-btn">Option 3</button>
     <button class="choice-btn">Option 4</button>
     <p id="timer">Time: <span id="time">60</span> seconds</p>
-</div>
+</section>
 
 <!-- Same as before -->
 

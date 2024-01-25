@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-#start-screen, #quiz-screen, #game-over-screen {
+#start-screen, #qscreen, #goscreen {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
@@ -36,7 +36,7 @@ input {
     font-size: 14px;
 }
 
-#start-btn, #save-score-btn {
+#buttonstart, #savebutton {
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -50,7 +50,7 @@ input {
     border-radius: 5px;
 }
 
-#final-score {
+#finalscore {
     font-weight: bold;
     font-size: 20px;
 }
