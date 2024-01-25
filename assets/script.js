@@ -1,3 +1,15 @@
+//im not sure if this is the correct to cite sources.but the following links are the 
+//videos i watched on youtube to help me complete this project.
+//there was 4 videos and i learned a little of code from each one.
+//the four links are as follows 
+//https://www.youtube.com/watch?v=PBcqGxrr9g8&t=197s
+///https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4835s
+//https://www.youtube.com/watch?v=riDzcEQbX6k
+//https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
+//also used stackoverflow.com
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var startBtn = document.getElementById("buttonstart");
     var quizScreen = document.getElementById("qscreen");

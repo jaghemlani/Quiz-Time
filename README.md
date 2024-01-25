@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4835s
 https://www.youtube.com/watch?v=riDzcEQbX6k
 https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
 
+Also used Stackoverflow.com for help with JS code.
+
 
 
 
