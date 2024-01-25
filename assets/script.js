@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const startBtn = document.getElementById("buttonstart");
-    const quizScreen = document.getElementById("qscreen");
-    const gameOverScreen = document.getElementById("goscreen");
-    const finalScore = document.getElementById("finalscore");
-    const saveScoreBtn = document.getElementById("savebutton");
-    const questionText = document.getElementById("textquestion");
-    const questionNumber = document.getElementById("question-number");
-    const timerDisplay = document.getElementById("time");
-    const choiceButtons = document.querySelectorAll(".choice-btn");
+    var startBtn = document.getElementById("buttonstart");
+    var quizScreen = document.getElementById("qscreen");
+    var gameOverScreen = document.getElementById("goscreen");
+    var finalScore = document.getElementById("finalscore");
+    var saveScoreBtn = document.getElementById("savebutton");
+    var questionText = document.getElementById("textquestion");
+    var questionNumber = document.getElementById("question-number");
+    var timerDisplay = document.getElementById("time");
+    var choiceButtons = document.querySelectorAll(".choice-btn");
 
     let currentQuestionIndex = 0;
     let correctAnswers = 0;
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startBtn.addEventListener("click", startQuiz);
     saveScoreBtn.addEventListener("click", saveScore);
 
+    //function to start the quiz
     function startQuiz() {
         document.getElementById("start-screen").classList.add("hidden");
         quizScreen.classList.remove("hidden");
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         displayQuestion();
     }
 
+    //function for showing question and answer choices
     function displayQuestion() {
         const question = quizQuestions[currentQuestionIndex];
         questionNumber.textContent = currentQuestionIndex + 1;
@@ -50,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    //function for user choosing answer and then next question
     function handleAnswerClick(choiceIndex) {
         const question = quizQuestions[currentQuestionIndex];
 
@@ -69,10 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    //timer function
     function updateTimerDisplay() {
         timerDisplay.textContent = timeRemaining;
     }
 
+    //end of quiz and show results
     function endQuiz() {
         clearInterval(timer);
         quizScreen.classList.add("hidden");
@@ -91,4 +96,39 @@ document.addEventListener("DOMContentLoaded", function () {
         finalScore.innerText = `Correct Answers: ${correctAnswers} | Wrong Answers: ${wrongAnswers}`;
     }
 
+    //questions
+    var quizQuestions = [
+        {
+            text: "Which of the following is not a primitive data type in JavaScript?",
+            choices: ["Number", "String", "Boolean", "Object"],
+            correctAnswer: 3,
+        },
+        // Add more questions with choices and correct answers
+        // ...
+        {
+            text: "What does the “NaN” value represent in JavaScript?",
+            choices: ["Not a number", "Null value", "Undefined value", "Boolean value"],
+            correctAnswer: 0,
+        },
+        {
+            text: "Inside which HTML element do we put the JavaScript?",
+            choices: ["<script>", "<js>", "<scripting>", "<javascript>"],
+            correctAnswer: 0,
+        },
+        {
+            text: "JavaScript is the same as Java.",
+            choices: ["true", "false"],
+            correctAnswer: 1,
+        },
+        {
+            text: "Is JavaScript case-sensitive?",
+            choices: ["Yess!", "No!!"],
+            correctAnswer: 0,
+        },
+        {
+            text: "Which operator is used to assign a value to a variable?",
+            choices: ["=", "*", "-", "+"],
+            correctAnswer: 0,
+        },
+    ];
 });
